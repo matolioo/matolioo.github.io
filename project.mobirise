@@ -117,7 +117,7 @@
     "uniqCompNum": 28,
     "versionPublish": "4.12.4",
     "imageResize": true,
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/sucasa-mini-logo-128x128.png",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
