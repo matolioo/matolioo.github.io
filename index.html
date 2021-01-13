@@ -42,6 +42,37 @@ src="https://www.facebook.com/tr?id=121794476451975&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
   
+  <!-- Global site tag (gtag.js) - Google Ads: 471997530 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-471997530"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-471997530');
+</script>
+  
+  <!-- Event snippet for Contact conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-471997530/ZHoOCMTYuvABENq4iOEB'});
+</script>
+  
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gag_treport_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-471997530/ZHoOCMTYuvABENq4iOEB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+  
   
 </head>
 <body>
@@ -274,7 +305,7 @@ src="https://www.facebook.com/tr?id=121794476451975&ev=PageView&noscript=1"
                             <div data-for="message" class="col-md-12  form-group">
                                 <textarea name="message" placeholder="Poruka" data-form-field="Message" class="form-control input display-7" id="message-form4-h"></textarea>
                             </div>
-                            <div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" class="btn btn-form btn-primary display-4">POŠALJI</button></div>
+                            <div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" onclick="gtag_report_conversion('https://sucasa-design.com')" class="btn btn-form btn-primary display-4">POŠALJI</button></div>
                         </div>
                     <span class="gdpr-block">
 <label>
