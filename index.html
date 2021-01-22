@@ -48,11 +48,11 @@ src="https://www.facebook.com/tr?id=404910724054309&ev=PageView&noscript=1"
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-471997530');
-</script>
+</script> 
   <!-- Event snippet for Contact conversion page -->
-<script>
+<!-- <script>
   gtag('event', 'conversion', {'send_to': 'AW-471997530/ZHoOCMTYuvABENq4iOEB'});
-</script>
+</script> -->
   <!-- Event snippet for Contact conversion page
 In your html page, add the snippet and call gag_treport_conversion when someone clicks on the chosen link or button. -->
 <script>
@@ -69,11 +69,15 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
- <script>
+  
+<script>
+function gtag_report_conversion_phone() {
   gtag('config', 'AW-471997530/FD1pCKTY3PABENq4iOEB', {
     'phone_conversion_number': '+385 99 510 4277'
   });
-</script> 
+  return false;
+}
+</script>
   
 </head>
 <body>
@@ -111,7 +115,7 @@ function gtag_report_conversion(url) {
                 </li><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#gallery3-e"><span class="mbrib-image-gallery mbr-iconfont mbr-iconfont-btn"></span>
                         Galerija</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#gallery3-e"><span class="mbri-database mbr-iconfont mbr-iconfont-btn"></span>
                         Usluge</a></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="tel:+385 99 510 4277 "><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+            <div onclick="gtag_report_conversion_phone()" class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="tel:+385 99 510 4277 "><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     Kontakt</a></div>
         </div>
     </nav>
@@ -306,8 +310,7 @@ function gtag_report_conversion(url) {
                             <div data-for="message" class="col-md-12  form-group">
                                 <textarea name="message" placeholder="Poruka" data-form-field="Message" class="form-control input display-7" id="message-form4-h"></textarea>
                             </div>
-                            <div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" class="btn btn-form btn-primary display-4">POŠALJI</button></div>
-                        </div>
+<div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" onclick="gtag_report_conversion('https://sucasa-design.com')" class="btn btn-form btn-primary display-4">POŠALJI</button></div>                        </div>
                     <span class="gdpr-block">
 <label>
 <span class="textGDPR display-7" style="color: #a7a7a7"><input type="checkbox" name="gdpr" id="gdpr-form4-h" required="">Naše web stranice koriste kolačiće kako bi vam omogućili najbolje korisničko iskustvo. Pregledavanjem web stranice slažete se s korištenjem kolačića. 
